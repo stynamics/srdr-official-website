@@ -24,7 +24,7 @@ const ChatBot = () => {
       isBot: false,
     };
 
-    setMessages(prev => [...prev, userMessage]);
+    setMessages((prev) => [...prev, userMessage]);
     setInputValue("");
 
     // Simulate bot response
@@ -34,12 +34,12 @@ const ChatBot = () => {
         text: "Thank you for your message! Our team will get back to you soon. For immediate assistance, please call us or use WhatsApp.",
         isBot: true,
       };
-      setMessages(prev => [...prev, botResponse]);
+      setMessages((prev) => [...prev, botResponse]);
     }, 1000);
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       handleSendMessage();
     }
   };
@@ -96,13 +96,13 @@ const ChatBot = () => {
               {messages.map((message) => (
                 <div
                   key={message.id}
-                  className={`flex ${message.isBot ? 'justify-start' : 'justify-end'}`}
+                  className={`flex ${message.isBot ? "justify-start" : "justify-end"}`}
                 >
                   <div
                     className={`max-w-[70%] p-3 rounded-lg text-sm ${
                       message.isBot
-                        ? 'bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white'
-                        : 'bg-blue-600 text-white'
+                        ? "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white"
+                        : "bg-blue-600 text-white"
                     }`}
                   >
                     {message.isBot && (
@@ -128,7 +128,7 @@ const ChatBot = () => {
                 placeholder="Ask about our construction services..."
                 className="flex-1 text-sm"
               />
-              <Button 
+              <Button
                 onClick={handleSendMessage}
                 size="sm"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-3"

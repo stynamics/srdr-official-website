@@ -1,4 +1,3 @@
-
 import { Instagram } from "lucide-react";
 
 const SocialMediaFloat = () => {
@@ -6,7 +5,7 @@ const SocialMediaFloat = () => {
     // Ensure new tab opens from top of page
     setTimeout(() => {
       if (window.scrollTo) {
-        window.scrollTo({ top: 0, behavior: 'instant' });
+        window.scrollTo({ top: 0, behavior: "instant" });
       }
     }, 100);
   };

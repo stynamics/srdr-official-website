@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,12 +21,13 @@ const Contact = () => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData);
-    
+
     toast({
       title: "Message Sent!",
-      description: "Thank you for your inquiry. We'll contact you within 24 hours.",
+      description:
+        "Thank you for your inquiry. We'll contact you within 24 hours.",
     });
-    
+
     // Reset form
     setFormData({
       name: "",
@@ -39,7 +39,11 @@ const Contact = () => {
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -54,7 +58,8 @@ const Contact = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl text-gray-200">
-              Ready to start your construction project? Get in touch with our expert team for a free consultation.
+              Ready to start your construction project? Get in touch with our
+              expert team for a free consultation.
             </p>
           </div>
         </div>
@@ -65,16 +70,22 @@ const Contact = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-1">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
-              
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+                Get In Touch
+              </h2>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Our Office</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">
+                      Our Office
+                    </h3>
                     <p className="text-gray-600">
-                      123 Brigade Road, MG Road<br />
-                      Bangalore, Karnataka 560025<br />
+                      123 Brigade Road, MG Road
+                      <br />
+                      Bangalore, Karnataka 560025
+                      <br />
                       India
                     </p>
                   </div>
@@ -85,12 +96,18 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                     <p className="text-gray-600">
-                      <a href="tel:+919876543210" className="hover:text-blue-600">
+                      <a
+                        href="tel:+919876543210"
+                        className="hover:text-blue-600"
+                      >
                         +91 98765 43210
                       </a>
                     </p>
                     <p className="text-gray-600">
-                      <a href="tel:+918012345678" className="hover:text-blue-600">
+                      <a
+                        href="tel:+918012345678"
+                        className="hover:text-blue-600"
+                      >
                         +91 80123 45678
                       </a>
                     </p>
@@ -102,12 +119,18 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600">
-                      <a href="mailto:info@srdreamspace.com" className="hover:text-blue-600">
+                      <a
+                        href="mailto:info@srdreamspace.com"
+                        className="hover:text-blue-600"
+                      >
                         info@srdreamspace.com
                       </a>
                     </p>
                     <p className="text-gray-600">
-                      <a href="mailto:projects@srdreamspace.com" className="hover:text-blue-600">
+                      <a
+                        href="mailto:projects@srdreamspace.com"
+                        className="hover:text-blue-600"
+                      >
                         projects@srdreamspace.com
                       </a>
                     </p>
@@ -117,9 +140,12 @@ const Contact = () => {
                 <div className="flex items-start space-x-4">
                   <Clock className="h-6 w-6 text-blue-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">
+                      Business Hours
+                    </h3>
                     <p className="text-gray-600">
-                      Monday - Saturday: 9:00 AM - 7:00 PM<br />
+                      Monday - Saturday: 9:00 AM - 7:00 PM
+                      <br />
                       Sunday: 10:00 AM - 5:00 PM
                     </p>
                   </div>
@@ -128,9 +154,11 @@ const Contact = () => {
                 <div className="flex items-start space-x-4">
                   <MessageCircle className="h-6 w-6 text-green-600 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">WhatsApp</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">
+                      WhatsApp
+                    </h3>
                     <p className="text-gray-600">
-                      <a 
+                      <a
                         href="https://wa.me/919876543210"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -150,14 +178,18 @@ const Contact = () => {
                 <CardHeader>
                   <CardTitle className="text-2xl">Get Free Quote</CardTitle>
                   <p className="text-gray-600">
-                    Fill out the form below and we'll get back to you within 24 hours with a detailed quote.
+                    Fill out the form below and we'll get back to you within 24
+                    hours with a detailed quote.
                   </p>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label
+                          htmlFor="name"
+                          className="block text-sm font-medium text-gray-700 mb-2"
+                        >
                           Full Name *
                         </label>
                         <Input
@@ -171,7 +203,10 @@ const Contact = () => {
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium text-gray-700 mb-2"
+                        >
                           Email Address *
                         </label>
                         <Input
@@ -188,7 +223,10 @@ const Contact = () => {
 
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label
+                          htmlFor="phone"
+                          className="block text-sm font-medium text-gray-700 mb-2"
+                        >
                           Phone Number *
                         </label>
                         <Input
@@ -202,7 +240,10 @@ const Contact = () => {
                         />
                       </div>
                       <div>
-                        <label htmlFor="projectType" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label
+                          htmlFor="projectType"
+                          className="block text-sm font-medium text-gray-700 mb-2"
+                        >
                           Project Type *
                         </label>
                         <select
@@ -216,15 +257,24 @@ const Contact = () => {
                           <option value="">Select project type</option>
                           <option value="construction">New Construction</option>
                           <option value="renovation">Renovation</option>
-                          <option value="interior-fitouts">Interior Fit-outs</option>
-                          <option value="project-management">Project Management</option>
-                          <option value="general-contracting">General Contracting</option>
+                          <option value="interior-fitouts">
+                            Interior Fit-outs
+                          </option>
+                          <option value="project-management">
+                            Project Management
+                          </option>
+                          <option value="general-contracting">
+                            General Contracting
+                          </option>
                         </select>
                       </div>
                     </div>
 
                     <div>
-                      <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="budget"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Expected Budget
                       </label>
                       <select
@@ -245,7 +295,10 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="message"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Project Details
                       </label>
                       <Textarea
@@ -258,12 +311,17 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full bg-blue-600 hover:bg-blue-700"
+                    >
                       Send Message & Get Free Quote
                     </Button>
 
                     <p className="text-sm text-gray-500 text-center">
-                      By submitting this form, you agree to our privacy policy and terms of service.
+                      By submitting this form, you agree to our privacy policy
+                      and terms of service.
                     </p>
                   </form>
                 </CardContent>
@@ -276,12 +334,15 @@ const Contact = () => {
       {/* Map Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Find Us</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Find Us
+          </h2>
           <div className="bg-gray-300 h-96 rounded-lg flex items-center justify-center">
             <div className="text-center">
               <MapPin className="h-12 w-12 text-gray-500 mx-auto mb-4" />
               <p className="text-gray-600">
-                Interactive map would be embedded here<br />
+                Interactive map would be embedded here
+                <br />
                 123 Brigade Road, MG Road, Bangalore
               </p>
             </div>
@@ -292,11 +353,18 @@ const Contact = () => {
       {/* Emergency Contact */}
       <section className="py-16 bg-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Emergency Construction Services</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Emergency Construction Services
+          </h2>
           <p className="text-xl mb-6">
             Available 24/7 for urgent construction and repair needs
           </p>
-          <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4">
+          <Button
+            asChild
+            size="lg"
+            variant="secondary"
+            className="text-lg px-8 py-4"
+          >
             <a href="tel:+919876543210">Call Emergency Line: +91 98765 43210</a>
           </Button>
         </div>

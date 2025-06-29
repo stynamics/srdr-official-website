@@ -1,18 +1,18 @@
-
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton = () => {
   const phoneNumber = "919876543210";
-  const message = "Hi! I'm interested in your construction services. Please provide more information.";
-  
+  const message =
+    "Hi! I'm interested in your construction services. Please provide more information.";
+
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     // Ensure new tab opens from top of page
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) {
       setTimeout(() => {
         if (window.scrollTo) {
-          window.scrollTo({ top: 0, behavior: 'instant' });
+          window.scrollTo({ top: 0, behavior: "instant" });
         }
       }, 100);
     }
