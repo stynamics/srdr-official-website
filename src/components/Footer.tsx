@@ -8,7 +8,7 @@ import {
   Linkedin,
   Youtube,
 } from "lucide-react";
-
+import logo from "../assests/SRDSRlogo.png";
 const Footer = () => {
   const socialLinks = [
     {
@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="animate-fade-in">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="/lovable-uploads/af79efa8-5df0-43cf-b09a-41a8a9f05199.png"
+                src={logo}
                 alt="SR DreamSpace Realty Logo"
                 className="w-10 h-10 object-contain"
               />
