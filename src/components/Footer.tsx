@@ -203,18 +203,18 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 mt-1 text-orange-400 flex-shrink-0" />
                 <span className="text-gray-300 leading-relaxed">
-                  123 Brigade Road, MG Road,
+                  #108,GroundFloor,Brindavana Layout,
                   <br />
-                  Bangalore, Karnataka 560025
+                  TC Palya Bangalore Karnataka 560036
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919591641954"
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
-                  +91 98765 43210
+                  +91 9591641954
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -232,20 +232,33 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 SR DreamSpace Realty. All rights reserved. |
-            <Link
-              to="/privacy"
-              className="hover:text-white ml-1 transition-colors duration-300"
+            © 2024 SR DreamSpace Realty. All rights reserved.
+          </p>
+          <p className="text-gray-400 text-sm mt-2">
+            Developed and maintained by{" "}
+            <a
+              href="https://stynamics.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors duration-300"
             >
-              Privacy Policy
-            </Link>{" "}
-            |
-            <Link
-              to="/terms"
-              className="hover:text-white ml-1 transition-colors duration-300"
-            >
-              Terms of Service
-            </Link>
+              Stynamics.com
+            </a>
+          </p>
+          <p className="text-gray-400 text-sm mt-4">
+            {/* <Link
+      to="/privacy"
+      className="hover:text-white transition-colors duration-300"
+    >
+      Privacy Policy
+    </Link>{" "}
+    |{" "}
+    <Link
+      to="/terms"
+      className="hover:text-white transition-colors duration-300"
+    >
+      Terms of Service
+    </Link> */}
           </p>
         </div>
       </div>

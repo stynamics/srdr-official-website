@@ -68,11 +68,11 @@ const Header = () => {
           {/* CTA Buttons & Theme Toggle */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="tel:+919876543210"
+              href="tel:+919591641954"
               className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-300"
             >
               <Phone className="h-4 w-4" />
-              <span className="text-sm font-medium">+91 98765 43210</span>
+              <span className="text-sm font-medium">+91 9591641954</span>
             </a>
             <ThemeToggle />
             <Button
@@ -123,7 +123,7 @@ const Header = () => {
                   className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 px-2"
                 >
                   <Phone className="h-4 w-4" />
-                  <span className="text-sm font-medium">+91 98765 43210</span>
+                  <span className="text-sm font-medium">+91 95916 41954</span>
                 </a>
                 <Button
                   asChild

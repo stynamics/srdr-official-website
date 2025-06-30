@@ -82,9 +82,9 @@ const Contact = () => {
                       Our Office
                     </h3>
                     <p className="text-gray-600">
-                      123 Brigade Road, MG Road
+                      #108,GroundFloor,Brindavana Layout,TC Palya
                       <br />
-                      Bangalore, Karnataka 560025
+                      Bengaluru 560036
                       <br />
                       India
                     </p>
@@ -97,18 +97,18 @@ const Contact = () => {
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                     <p className="text-gray-600">
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+919591641954"
                         className="hover:text-blue-600"
                       >
-                        +91 98765 43210
+                        +91 8553855113
                       </a>
                     </p>
                     <p className="text-gray-600">
                       <a
-                        href="tel:+918012345678"
+                        href="tel:+919591641954"
                         className="hover:text-blue-600"
                       >
-                        +91 80123 45678
+                        +91 95916 41954
                       </a>
                     </p>
                   </div>
@@ -159,7 +159,7 @@ const Contact = () => {
                     </h3>
                     <p className="text-gray-600">
                       <a
-                        href="https://wa.me/919876543210"
+                        href="https://wa.me/+91959164195"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-green-600"
@@ -236,7 +236,7 @@ const Contact = () => {
                           required
                           value={formData.phone}
                           onChange={handleChange}
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 9591641954"
                         />
                       </div>
                       <div>
@@ -332,21 +332,24 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Find Us
-          </h2>
-          <div className="bg-gray-300 h-96 rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-12 w-12 text-gray-500 mx-auto mb-4" />
-              <p className="text-gray-600">
-                Interactive map would be embedded here
-                <br />
-                123 Brigade Road, MG Road, Bangalore
-              </p>
-            </div>
+      <section className="py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8">Find Us</h2>
+          <div className="bg-gray-300 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.238537892595!2d77.69437497507727!3d13.020476087299413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzEzLjciTiA3N8KwNDEnNDkuMCJF!5e0!3m2!1sen!2sin!4v1751265264708!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+            ></iframe>
           </div>
+          <p className="text-gray-600 text-center mt-4">
+            123 Brigade Road, MG Road, Bangalore
+          </p>
         </div>
       </section>
 
@@ -365,7 +368,7 @@ const Contact = () => {
             variant="secondary"
             className="text-lg px-8 py-4"
           >
-            <a href="tel:+919876543210">Call Emergency Line: +91 98765 43210</a>
+            <a href="tel:+919591641954">Call Emergency Line: +91 98765 43210</a>
           </Button>
         </div>
       </section>

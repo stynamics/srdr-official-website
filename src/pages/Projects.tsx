@@ -112,7 +112,7 @@ const Projects = () => {
             <h1 className="text-5xl font-bold mb-6 text-white">Our Projects</h1>
             <p className="text-xl text-gray-200">
               Explore our portfolio of successfully completed construction and
-              renovation projects across Bangalore.
+              renovation projects across Bengaluru.
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ const Projects = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                500+
+                50+
               </div>
               <div className="text-gray-600 dark:text-gray-300">
                 Projects Completed
@@ -132,7 +132,7 @@ const Projects = () => {
             </div>
             <div>
               <div className="text-4xl font-bold text-orange-600 dark:text-orange-400 mb-2">
-                15+
+                6+
               </div>
               <div className="text-gray-600 dark:text-gray-300">
                 Years Experience
@@ -148,7 +148,7 @@ const Projects = () => {
             </div>
             <div>
               <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-                ₹100Cr+
+                ₹10Cr+
               </div>
               <div className="text-gray-600 dark:text-gray-300">
                 Project Value

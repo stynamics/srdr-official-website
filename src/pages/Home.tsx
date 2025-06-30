@@ -43,9 +43,9 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "500+", label: "Projects Completed", icon: CheckCircle },
-    { number: "15+", label: "Years Experience", icon: Award },
-    { number: "200+", label: "Happy Clients", icon: Users },
+    { number: "20+", label: "Projects Completed", icon: CheckCircle },
+    { number: "6+", label: "Years Experience", icon: Award },
+    { number: "50+", label: "Happy Clients", icon: Users },
     { number: "24/7", label: "Support Available", icon: Clock },
   ];
 
@@ -65,11 +65,11 @@ const Home = () => {
             <div className="max-w-4xl">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white text-shadow-lg">
                 Building Your <span className="text-orange-400">Dreams</span> in
-                Bangalore
+                Bengaluru and Beyond
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-100 text-shadow">
                 Premier construction, renovation, and project management
-                services. Quality craftsmanship with 15+ years of excellence.
+                services. Quality craftsmanship with 6+ years of excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button
@@ -94,7 +94,7 @@ const Home = () => {
                   className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 hover:bg-white/30 transition-all text-white"
                 >
                   <Phone className="h-5 w-5" />
-                  <span className="font-medium">+91 98765 43210</span>
+                  <span className="font-medium">+91 95916 41954</span>
                 </a>
                 <span className="text-gray-200">
                   Call Now for Immediate Assistance
@@ -135,7 +135,7 @@ const Home = () => {
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               From ground-up construction to interior renovations, we deliver
-              comprehensive solutions for all your building needs in Bangalore.
+              comprehensive solutions for all your building needs in Bengaluru.
             </p>
           </div>
 
@@ -183,7 +183,7 @@ const Home = () => {
                   <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">
-                      15+ Years of Excellence
+                      6+ Years of Excellence
                     </h4>
                     <p className="text-gray-600 dark:text-gray-300">
                       Proven track record in delivering quality construction
@@ -242,7 +242,7 @@ const Home = () => {
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-orange-600 text-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold">500+</div>
+                <div className="text-2xl font-bold">20+</div>
                 <div className="text-sm">Successful Projects</div>
               </div>
             </div>
@@ -275,7 +275,7 @@ const Home = () => {
               variant="outline"
               className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-orange-600"
             >
-              <a href="tel:+919876543210">Call Now: +91 98765 43210</a>
+              <a href="tel:+919876543210">Call Now: +91 95916 41954</a>
             </Button>
           </div>
         </div>

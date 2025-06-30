@@ -6,7 +6,7 @@ import { Award, Users, Target, Eye, CheckCircle, Phone } from "lucide-react";
 const About = () => {
   const team = [
     {
-      name: "Rajesh Sharma",
+      name: "Suresh R",
       position: "Founder & CEO",
       experience: "20+ years",
       image:
@@ -53,7 +53,7 @@ const About = () => {
             <h1 className="text-5xl font-bold mb-6">About SR DreamSpace</h1>
             <p className="text-xl text-gray-200">
               Building exceptional spaces with integrity, innovation, and
-              excellence for over 15 years in Bangalore.
+              excellence for over 6+ years in Bengaluru.
             </p>
           </div>
         </div>

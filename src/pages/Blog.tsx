@@ -300,7 +300,7 @@ const Blog = () => {
               variant="outline"
               className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-orange-600 transition-all duration-300"
             >
-              <a href="tel:+919876543210">Call: +91 98765 43210</a>
+              <a href="tel:+919876543210">Call: +91 95916 41954</a>
             </Button>
           </div>
         </div>

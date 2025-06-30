@@ -244,7 +244,7 @@ const ProjectDetail = () => {
                         <Link to="/contact">Start Your Project</Link>
                       </Button>
                       <Button asChild variant="outline" className="w-full">
-                        <a href="tel:+919876543210">
+                        <a href="tel:+919591641954">
                           <Phone className="h-4 w-4 mr-2" />
                           Call Now
                         </a>

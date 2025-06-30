@@ -188,7 +188,7 @@ const Packages = () => {
                           onClick={() => {
                             const message = `Hi! I'm interested in the ${pkg.name} package (${pkg.price}). Please provide more details and schedule a consultation.`;
                             window.open(
-                              `https://wa.me/919876543210?text=${encodeURIComponent(message)}`,
+                              `https://wa.me/919591641954?text=${encodeURIComponent(message)}`,
                               "_blank",
                             );
                           }}
@@ -201,7 +201,7 @@ const Packages = () => {
                           size="sm"
                           className="flex-1 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400 hover:bg-blue-600 hover:text-white"
                           onClick={() =>
-                            window.open("tel:+919876543210", "_self")
+                            window.open("tel:+919591641954", "_self")
                           }
                         >
                           <Phone className="h-4 w-4 mr-2" />
@@ -295,7 +295,7 @@ const Packages = () => {
               variant="outline"
               className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-blue-600 transition-all duration-300"
             >
-              <a href="tel:+919876543210">Call: +91 98765 43210</a>
+              <a href="tel:+919876543210">Call: +919591641954</a>
             </Button>
           </div>
         </div>
