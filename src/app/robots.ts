@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://srdreamspace.com/sitemap.xml',
+    sitemap: 'https://srdreamspacerealty.com/sitemap.xml',
   }
 }

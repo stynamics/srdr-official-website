@@ -5,9 +5,9 @@ export function JsonLd() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "SR DreamSpace Realty",
-    "image": "https://srdreamspace.com/logo.png",
-    "@id": "https://srdreamspace.com",
-    "url": "https://srdreamspace.com",
+    "image": "https://srdreamspacerealty.com/logo.png",
+    "@id": "https://srdreamspacerealty.com",
+    "url": "https://srdreamspacerealty.com",
     "telephone": "+919876543210",
     "priceRange": "$$$",
     "address": {
@@ -37,9 +37,9 @@ export function JsonLd() {
       "closes": "18:00"
     },
     "sameAs": [
-      "https://www.facebook.com/srdreamspace",
-      "https://www.instagram.com/srdreamspace",
-      "https://www.linkedin.com/company/srdreamspace"
+      "https://www.facebook.com/srdreamspacerealty",
+      "https://www.instagram.com/srdreamspacerealty",
+      "https://www.linkedin.com/company/srdreamspacerealty"
     ]
   };
 

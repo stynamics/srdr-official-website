@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SR DreamSpace Realty | Premium Construction in Bangalore",
   description: "Transparent pricing, guaranteed timelines, and premium quality construction services in Bangalore.",
-  metadataBase: new URL('https://srdreamspace.com'),
+  metadataBase: new URL('https://srdreamspacerealty.com'),
   openGraph: {
     title: 'SR DreamSpace Realty',
     description: 'Transparent pricing, guaranteed timelines, and premium quality construction services in Bangalore.',
-    url: 'https://srdreamspace.com',
+    url: 'https://srdreamspacerealty.com',
     siteName: 'SR DreamSpace Realty',
     images: [
       {

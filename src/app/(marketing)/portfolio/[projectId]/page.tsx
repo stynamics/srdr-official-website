@@ -13,6 +13,31 @@ export async function generateMetadata({ params }: { params: Promise<{ projectId
     return {
       title: `${project.title} | SR DreamSpace Realty Portfolio`,
       description: project.shortDesc,
+      alternates: {
+        canonical: `https://srdreamspacerealty.com/portfolio/${resolvedParams.projectId}`,
+      },
+      openGraph: {
+        title: `${project.title} | SR DreamSpace Realty`,
+        description: project.shortDesc,
+        url: `https://srdreamspacerealty.com/portfolio/${resolvedParams.projectId}`,
+        siteName: 'SR DreamSpace Realty',
+        images: [
+          {
+            url: project.afterImage,
+            width: 1200,
+            height: 630,
+            alt: project.title,
+          },
+        ],
+        locale: 'en_IN',
+        type: 'article',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: project.title,
+        description: project.shortDesc,
+        images: [project.afterImage],
+      },
     };
   }
 

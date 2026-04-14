@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Menu, MessageCircle } from "lucide-react";
@@ -29,14 +30,22 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-4" : "bg-white/50 backdrop-blur-sm py-6"
+        isScrolled 
+          ? "bg-[#FDFCF8]/95 backdrop-blur-md shadow-sm py-3" 
+          : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative font-bold text-2xl md:text-3xl tracking-tighter text-brand-blue">
-            <span className="text-brand-gold">SR</span> DreamSpace
+          <div className="relative w-48 h-12 md:w-56 md:h-14">
+            <Image 
+                src="/logo.png" 
+                alt="SR DreamSpace Realty" 
+                fill
+                className="object-contain object-left"
+                priority
+            />
           </div>
         </Link>
 
@@ -47,7 +56,7 @@ export function Header() {
               <Link
                 key={link.name}
                 href={link.path}
-                className="text-sm font-semibold text-slate-700 hover:text-brand-gold transition-colors"
+                className="text-base font-bold text-slate-700 hover:text-brand-gold transition-colors"
               >
                 {link.name}
               </Link>
@@ -57,7 +66,7 @@ export function Header() {
           <div className="flex items-center gap-4 border-l pl-6 border-slate-200">
             {/* WhatsApp */}
             <Link
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919876543210"
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 hover:text-green-500 transition-colors bg-green-50 p-2 rounded-full"
@@ -77,7 +86,7 @@ export function Header() {
         {/* Mobile Navigation */}
         <div className="lg:hidden flex items-center gap-3">
           <Link
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/919876543210"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-600 hover:text-green-500 bg-green-50 p-2 rounded-full"
