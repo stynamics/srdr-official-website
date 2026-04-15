@@ -1,7 +1,9 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { PainPointsSection } from "@/components/sections/PainPointsSection";
 import { WhyChooseUsSection } from "@/components/sections/WhyChooseUsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ServicesGridSection } from "@/components/sections/ServicesGridSection";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -40,7 +42,9 @@ export default function Home() {
       <HeroSection />
       <PainPointsSection />
       <WhyChooseUsSection />
+      <TestimonialsSection />
       <ServicesGridSection />
+      <FAQSection />
     </>
   );
 }

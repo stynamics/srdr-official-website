@@ -57,7 +57,7 @@ export function WhyChooseUsSection() {
                             <div className="w-16 h-16 bg-white text-brand-gold rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
                                 {feat.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-brand-blue mb-3 tracking-tight">{feat.title}</h3>
+                            <h3 className="text-xl font-extrabold text-brand-blue mb-3 tracking-tight">{feat.title}</h3>
                             <p className="text-base text-slate-600 leading-relaxed font-medium">
                                 {feat.desc}
                             </p>

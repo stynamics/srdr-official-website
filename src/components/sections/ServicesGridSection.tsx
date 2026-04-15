@@ -74,7 +74,7 @@ export function ServicesGridSection() {
                                 <svc.icon size={32} />
                             </div>
                             <h3 className="text-xl md:text-2xl font-extrabold mb-4 tracking-tight">{svc.title}</h3>
-                            <p className="text-slate-300/90 mb-8 flex-grow text-base md:text-lg leading-relaxed font-medium">
+                            <p className="text-slate-300/90 mb-8 flex-grow text-base leading-relaxed font-medium">
                                 {svc.desc}
                             </p>
                             

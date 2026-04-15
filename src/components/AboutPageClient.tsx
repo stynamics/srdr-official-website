@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Target, ShieldCheck, HeartPulse, Building2, HardHat, Smile } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -40,11 +41,15 @@ export default function AboutPageClient() {
                             viewport={{ once: true }}
                             className="relative"
                         >
-                            <img 
-                                src="https://images.unsplash.com/photo-1541888088320-cf5f9f6874eb?q=80&w=2070&auto=format&fit=crop" 
-                                alt="Construction Project" 
-                                className="w-full h-auto rounded-[3rem] shadow-2xl"
-                            />
+                            <div className="relative w-full aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl">
+                                <Image
+                                    src="https://images.unsplash.com/photo-1541888088320-cf5f9f6874eb?q=80&w=2070&auto=format&fit=crop"
+                                    alt="SR DreamSpace Realty construction project in Bangalore"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                />
+                            </div>
                             <div className="absolute -bottom-10 -right-10 bg-brand-gold text-white p-12 rounded-[2.5rem] shadow-2xl hidden md:block">
                                 <h3 className="text-5xl font-extrabold">100%</h3>
                                 <p className="text-brand-blue font-black tracking-[0.2em] uppercase text-xs mt-2">Legal Compliance</p>
@@ -139,12 +144,19 @@ export default function AboutPageClient() {
             <section className="py-24 md:py-32 bg-slate-50 overflow-hidden">
                 <div className="container mx-auto px-4 md:px-8 max-w-6xl">
                     <div className="bg-white rounded-[4rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-slate-100">
-                        <div className="lg:w-2/5 relative h-96 lg:h-auto">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Founder" className="absolute w-full h-full object-cover" />
+                        <div className="lg:w-2/5 relative h-96 lg:h-auto min-h-[400px]">
+                            <Image
+                                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop"
+                                alt="SR DreamSpace Realty Founder"
+                                fill
+                                className="absolute object-cover object-top"
+                                sizes="(max-width: 1024px) 100vw, 40vw"
+                            />
                         </div>
                         <div className="lg:w-3/5 p-12 md:p-20 flex flex-col justify-center">
-                            <h3 className="text-3xl font-extrabold text-brand-blue mb-10 tracking-tight uppercase tracking-widest text-sm text-brand-gold">A Personal commitment</h3>
-                            <p className="text-xl md:text-2xl text-slate-800 italic mb-10 leading-relaxed font-medium">
+                            <p className="text-xs font-black uppercase tracking-[0.25em] text-brand-gold mb-3">A Personal Commitment</p>
+                            <h3 className="text-3xl font-extrabold text-brand-blue mb-10 tracking-tight leading-tight">From the Founder's Desk</h3>
+                            <p className="text-lg md:text-xl text-slate-800 italic mb-10 leading-relaxed font-medium">
                                 "When you build your home with us, you aren't just signing a contract—you are handing over your family's future. I personally guarantee that our engineers will treat your project with the exact same gravity and care as if we were constructing our own homes."
                             </p>
                             <div className="flex items-center gap-6">

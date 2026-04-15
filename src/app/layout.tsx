@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/seo/JsonLd";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Body font: clean, modern, highly readable — ideal for real estate
+const jakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Heading font: premium serif for the Royal Heritage aesthetic
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -51,7 +57,7 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans flex flex-col min-h-screen bg-slate-50`}
+        className={`${jakartaSans.variable} ${playfair.variable} antialiased font-sans flex flex-col min-h-screen bg-slate-50`}
       >
         {children}
       </body>
