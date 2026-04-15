@@ -44,6 +44,7 @@ export function Header() {
                 src="/logo.png" 
                 alt="SR DreamSpace Realty" 
                 fill
+                sizes="(max-width: 768px) 200px, 250px"
                 className="object-contain object-left"
                 priority
             />

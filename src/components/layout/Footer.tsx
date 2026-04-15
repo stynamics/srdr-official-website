@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export function Footer() {
   return (
-    <footer className="relative bg-slate-950 text-white pt-24 pb-12 border-t border-white/5 overflow-hidden">
+    <footer className="relative bg-slate-950 text-white pt-5 pb-12 border-t border-white/5 overflow-hidden">
       {/* Jaali Pattern Overlay */}
       <div className="absolute inset-0 z-0 bg-jaali opacity-[0.03] pointer-events-none" />
 
@@ -20,6 +20,7 @@ export function Footer() {
                   src="/logo.png"
                   alt="SR DreamSpace Realty"
                   fill
+                  sizes="224px"
                   className="object-contain object-left invert brightness-200"
                 />
               </div>

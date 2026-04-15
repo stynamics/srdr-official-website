@@ -18,7 +18,7 @@ export default function PortfolioGalleryPageClient() {
     return (
         <div className="bg-white min-h-screen">
             {/* Header / Hero */}
-            <section className="bg-brand-blue pt-40 pb-32 text-center relative overflow-hidden">
+            <section className="bg-brand-blue pt-20 pb-32 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-[-10%] w-[500px] h-[500px] bg-brand-gold/15 blur-[120px] rounded-full pointer-events-none opacity-50" />
                 <div className="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-white/5 blur-[100px] rounded-full pointer-events-none" />
                 
