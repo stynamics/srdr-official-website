@@ -52,11 +52,31 @@ export default function GetAQuotePage() {
 
   const prevStep = () => setStep((prev) => Math.max(prev - 1, 1));
 
+  const WHATSAPP_NUMBER = "919591641954";
+
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
-    // Simulate API submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Lead captured: ", data);
+
+    // Build WhatsApp message with all lead data
+    const message = [
+      `🏗️ *New Quote Request from SR DreamSpace Website*`,
+      ``,
+      `📋 *Service:* ${data.service}`,
+      `📐 *Size:* ${data.size} Sq. Ft.`,
+      `⭐ *Quality:* ${data.quality}`,
+      `📅 *Timeline:* ${data.timeline}`,
+      ``,
+      `👤 *Name:* ${data.name}`,
+      `📞 *Phone:* ${data.phone}`,
+      data.email ? `📧 *Email:* ${data.email}` : "",
+    ].filter(Boolean).join("\n");
+
+    // Open WhatsApp with pre-filled message
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+
     setIsSubmitting(false);
     setIsSuccess(true);
   };
@@ -78,7 +98,7 @@ export default function GetAQuotePage() {
           <p className="text-slate-600 mb-8 leading-relaxed">
             Thank you for reaching out. A dedicated project manager will review your exact requirements and contact you shortly with a personalized estimate.
           </p>
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/919591641954" target="_blank" rel="noopener noreferrer">
             <Button className="w-full bg-[#25D366] hover:bg-[#20BE5C] text-white font-bold h-14 rounded-xl text-lg shadow-md transition-all hover:scale-105">
                 Connect Instantly via WhatsApp
             </Button>
@@ -214,7 +234,7 @@ export default function GetAQuotePage() {
                                     </div>
                                     <div className="space-y-2">
                                         <Label className="text-slate-700 font-bold text-base">Phone Number *</Label>
-                                        <Input {...form.register("phone")} type="tel" placeholder="+91 98765 43210" className="h-14 px-4 rounded-xl border-slate-300 text-lg" />
+                                        <Input {...form.register("phone")} type="tel" placeholder="+91 95916 41954" className="h-14 px-4 rounded-xl border-slate-300 text-lg" />
                                         {form.formState.errors.phone && <span className="text-red-500 text-sm font-medium">{form.formState.errors.phone.message}</span>}
                                     </div>
                                     <div className="space-y-2">

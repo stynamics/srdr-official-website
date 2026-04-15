@@ -7,17 +7,40 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "919591641954";
 
 export default function ContactPageClient() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate API
-        await new Promise(r => setTimeout(r, 1000));
+
+        const formData = new FormData(e.currentTarget);
+        const name = formData.get("name") as string;
+        const phone = formData.get("phone") as string;
+        const email = formData.get("email") as string;
+        const requirements = formData.get("requirements") as string;
+
+        // Build WhatsApp message with all lead data
+        const message = [
+            `🏗️ *New Lead from SR DreamSpace Website*`,
+            ``,
+            `👤 *Name:* ${name}`,
+            `📞 *Phone:* ${phone}`,
+            email ? `📧 *Email:* ${email}` : "",
+            ``,
+            `📋 *Requirements:*`,
+            requirements,
+        ].filter(Boolean).join("\n");
+
+        // Open WhatsApp with pre-filled message
+        window.open(
+            `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+            "_blank"
+        );
+
         setIsSubmitting(false);
         setIsSuccess(true);
     };
@@ -62,9 +85,9 @@ export default function ContactPageClient() {
                                 </div>
                                 <h3 className="text-xl font-extrabold text-brand-blue mb-3 tracking-tight">Direct Consulting</h3>
                                 <p className="text-slate-600 text-base mb-6 font-medium leading-relaxed">Speak with a project engineer for immediate structural advice.</p>
-                                <a href="tel:+919876543210" className="w-full">
+                                <a href="tel:+919591641954" className="w-full">
                                     <Button className="w-full bg-brand-blue hover:bg-brand-blue/90 text-white font-bold h-14 rounded-2xl text-lg shadow-lg transition-transform hover:scale-105">
-                                        +91 98765 43210
+                                        +91 95916 41954
                                     </Button>
                                 </a>
                             </motion.div>
@@ -100,20 +123,21 @@ export default function ContactPageClient() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                         <div className="space-y-3">
                                             <Label className="text-brand-blue font-bold text-base">Full Name *</Label>
-                                            <Input required placeholder="Your business or personal name" className="h-14 rounded-2xl border-slate-200 text-base font-medium bg-slate-50 focus:bg-white transition-all" />
+                                            <Input name="name" required placeholder="Your business or personal name" className="h-14 rounded-2xl border-slate-200 text-base font-medium bg-slate-50 focus:bg-white transition-all" />
                                         </div>
                                         <div className="space-y-3">
                                             <Label className="text-brand-blue font-bold text-base">Phone Number *</Label>
-                                            <Input required type="tel" placeholder="+91 9XXXXXXXXX" className="h-14 rounded-2xl border-slate-200 text-base font-medium bg-slate-50 focus:bg-white transition-all" />
+                                            <Input name="phone" required type="tel" placeholder="+91 9XXXXXXXXX" className="h-14 rounded-2xl border-slate-200 text-base font-medium bg-slate-50 focus:bg-white transition-all" />
                                         </div>
                                     </div>
                                     <div className="space-y-3">
                                         <Label className="text-brand-blue font-bold text-base">Email Address</Label>
-                                        <Input type="email" placeholder="you@example.com" className="h-14 rounded-2xl border-slate-200 text-base font-medium bg-slate-50 focus:bg-white transition-all" />
+                                        <Input name="email" type="email" placeholder="you@example.com" className="h-14 rounded-2xl border-slate-200 text-base font-medium bg-slate-50 focus:bg-white transition-all" />
                                     </div>
                                     <div className="space-y-3">
                                         <Label className="text-brand-blue font-bold text-base">Detailed Requirements *</Label>
                                         <textarea 
+                                            name="requirements"
                                             required 
                                             className="w-full h-32 px-5 py-4 rounded-2xl border border-slate-200 text-base font-medium bg-slate-50 focus:bg-white transition-all focus:ring-4 focus:ring-brand-gold/10 outline-none resize-none"
                                             placeholder="Tell us about the project location, plot size, and any specific challenges..."

@@ -69,7 +69,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="w-5 h-5 text-brand-gold shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-brand-gold transition-colors font-black text-base">+91 98765 43210</a>
+                <a href="tel:+919591641954" className="hover:text-brand-gold transition-colors font-black text-base">+91 95916 41954</a>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="w-5 h-5 text-brand-gold shrink-0" />
@@ -93,7 +93,7 @@ export function Footer() {
                     </Button>
                 </Link>
                 <a 
-                    href="https://wa.me/919876543210" 
+                    href="https://wa.me/919591641954" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 px-10 h-16 bg-white/5 text-slate-200 hover:bg-white/10 rounded-2xl transition-all font-black border border-white/10"

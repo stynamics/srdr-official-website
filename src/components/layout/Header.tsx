@@ -66,7 +66,7 @@ export function Header() {
           <div className="flex items-center gap-4 border-l pl-6 border-slate-200">
             {/* WhatsApp */}
             <Link
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919591641954"
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 hover:text-green-500 transition-colors bg-green-50 p-2 rounded-full"
@@ -86,7 +86,7 @@ export function Header() {
         {/* Mobile Navigation */}
         <div className="lg:hidden flex items-center gap-3">
           <Link
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919591641954"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-600 hover:text-green-500 bg-green-50 p-2 rounded-full"

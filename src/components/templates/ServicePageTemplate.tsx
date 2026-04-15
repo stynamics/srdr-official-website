@@ -18,7 +18,7 @@ export type ServiceData = {
   faqs: { q: string; a: string }[];
 };
 
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "919591641954";
 
 export function ServicePageTemplate({ data }: { data: ServiceData }) {
   return (

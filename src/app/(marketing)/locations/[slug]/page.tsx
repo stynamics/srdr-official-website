@@ -81,7 +81,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
     },
     "url": `https://srdreamspacerealty.com/locations/${resolvedParams.slug}`,
     "areaServed": displayName,
-    "telephone": "+919876543210"
+    "telephone": "+919591641954"
   };
 
   // Generate FAQ Schema

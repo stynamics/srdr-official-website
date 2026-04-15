@@ -16,7 +16,7 @@ export type LocationData = {
   faqs: { q: string; a: string }[];
 };
 
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "919591641954";
 
 export function LocationPageTemplate({ data }: { data: LocationData }) {
   return (

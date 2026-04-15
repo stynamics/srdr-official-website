@@ -8,7 +8,7 @@ export function JsonLd() {
     "image": "https://srdreamspacerealty.com/logo.png",
     "@id": "https://srdreamspacerealty.com",
     "url": "https://srdreamspacerealty.com",
-    "telephone": "+919876543210",
+    "telephone": "+919591641954",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
