@@ -102,28 +102,28 @@ export function HeroSection() {
             <div className="space-y-6">
                 <motion.div variants={itemVariants} className="inline-flex items-center gap-3 bg-brand-gold/10 backdrop-blur-md text-brand-gold border border-brand-gold/30 px-6 py-2.5 rounded-full w-fit">
                     <Zap className="w-4 h-4 fill-brand-gold" />
-                    <span className="text-xs font-bold tracking-[0.2em] uppercase">Vastu-Compliant • Premium Construction</span>
+                    <span className="text-sm font-bold tracking-[0.15em] uppercase">Vastu-Compliant • Premium Construction</span>
                 </motion.div>
                 
-                <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.95] tracking-tighter">
+                <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1] tracking-tighter">
                     Bangalore's <br />
                     <span className="text-brand-gold italic underline decoration-brand-gold/20">Heritage</span> Civil <br />
                     Engineers.
                 </motion.h1>
                 
-                <motion.p variants={itemVariants} className="text-xl md:text-2xl text-slate-300 max-w-xl leading-relaxed">
+                <motion.p variants={itemVariants} className="text-lg md:text-xl text-slate-300 max-w-xl leading-relaxed">
                     Corporate discipline meets traditional craftsmanship. From <span className="text-white font-bold italic">BHK Layouts</span> to <span className="text-white font-bold italic">Teakwood Finishes</span>, we build homes for generations.
                 </motion.p>
             </div>
             
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-5">
               <Link href="/get-a-quote">
-                <Button className="bg-brand-gold hover:bg-white hover:text-brand-blue text-brand-blue font-black h-16 px-12 text-lg rounded-2xl shadow-2xl transition-all">
+                <Button className="bg-brand-gold hover:bg-white hover:text-brand-blue text-brand-blue font-black h-14 px-10 text-base rounded-2xl shadow-2xl transition-all">
                   Get Instant Estimate
                 </Button>
               </Link>
               <Link href="/portfolio">
-                <Button variant="ghost" className="text-white hover:bg-white/10 h-16 px-8 text-lg font-bold flex items-center gap-2">
+                <Button variant="ghost" className="text-white hover:bg-white/10 h-14 px-8 text-base font-bold flex items-center gap-2">
                    View Masterpieces <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
@@ -154,22 +154,22 @@ export function HeroSection() {
                 <Card className="relative bg-[#FDFCF8] border-none shadow-2xl rounded-[2.5rem] overflow-hidden text-slate-900">
                     {/* Header info bar */}
                     <div className="bg-slate-950 text-white px-8 py-3 flex items-center justify-between">
-                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-brand-gold">Corporate Construction Discipline</span>
+                        <span className="text-xs font-black uppercase tracking-[0.15em] text-brand-gold">Corporate Construction Discipline</span>
                         <div className="flex gap-2">
                             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                            <span className="text-[10px] font-bold uppercase">Pricing: April 2026 Updated</span>
+                            <span className="text-xs font-bold uppercase">Pricing: April 2026 Updated</span>
                         </div>
                     </div>
 
                     <div className="p-8 lg:p-10 space-y-8">
                         <div>
-                            <h3 className="text-3xl font-black tracking-tight mb-1 text-slate-900">Cost Estimator</h3>
-                            <p className="text-slate-500 font-medium">Get a realistic budget for your dream home.</p>
+                            <h3 className="text-2xl font-black tracking-tight mb-1 text-slate-900">Cost Estimator</h3>
+                            <p className="text-slate-500 text-sm font-medium">Get a realistic budget for your dream home.</p>
                         </div>
 
                         {/* Step 1: Selection */}
                         <div className="space-y-4">
-                            <Label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Project Type</Label>
+                            <Label className="text-xs font-black uppercase tracking-[0.15em] text-slate-400">Project Type</Label>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                                 {[
                                     { id: "residential", label: "Villa", icon: Home },
@@ -187,7 +187,7 @@ export function HeroSection() {
                                         }`}
                                     >
                                         <opt.icon className="w-6 h-6" />
-                                        <span className="text-[10px] font-black uppercase tracking-wider">{opt.label}</span>
+                                        <span className="text-xs font-black uppercase tracking-wide">{opt.label}</span>
                                     </button>
                                 ))}
                             </div>
@@ -196,10 +196,10 @@ export function HeroSection() {
                         {/* Step 2: Size */}
                         <div className="space-y-4">
                             <div className="flex items-center justify-between">
-                                <Label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Total Built-up Area</Label>
+                                <Label className="text-xs font-black uppercase tracking-[0.15em] text-slate-400">Total Built-up Area</Label>
                                 <div className="flex gap-2">
-                                    <button onClick={() => setSqft("1200")} className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg text-[10px] font-bold transition-colors">30x40 (G+2)</button>
-                                    <button onClick={() => setSqft("2400")} className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg text-[10px] font-bold transition-colors">40x60 (G+3)</button>
+                                    <button onClick={() => setSqft("1200")} className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-bold transition-colors">30x40 (G+2)</button>
+                                    <button onClick={() => setSqft("2400")} className="px-3 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg text-xs font-bold transition-colors">40x60 (G+3)</button>
                                 </div>
                             </div>
                             <div className="relative">
@@ -216,7 +216,7 @@ export function HeroSection() {
 
                         {/* Step 3: Grade selection cards */}
                         <div className="space-y-4">
-                            <Label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Construction Grade</Label>
+                            <Label className="text-xs font-black uppercase tracking-[0.15em] text-slate-400">Construction Grade</Label>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                                 {[
                                     { id: "basic", label: "Classic", desc: "Solid Quality" },
@@ -248,21 +248,21 @@ export function HeroSection() {
                         <div className="pt-8 border-t border-slate-100">
                             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                                 <div>
-                                    <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-1 block">Indicative Budget</span>
+                                    <span className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-1 block">Indicative Budget</span>
                                     <motion.div 
                                         key={estimate}
                                         initial={{ opacity: 0, x: -10 }}
                                         animate={{ opacity: 1, x: 0 }}
-                                        className="text-4xl md:text-5xl font-black text-slate-950 tracking-tighter"
+                                        className="text-3xl md:text-4xl font-black text-slate-950 tracking-tighter"
                                     >
                                         {formatCurrency(estimate)}
                                     </motion.div>
-                                    <p className="text-[10px] font-bold text-slate-400 uppercase mt-2 tracking-widest flex items-center gap-2">
-                                        <Zap className="w-3 h-3 text-brand-gold fill-brand-gold" /> Includes GS-T & Approvals Estimate
+                                    <p className="text-xs font-bold text-slate-400 uppercase mt-2 tracking-widest flex items-center gap-2">
+                                        <Zap className="w-3 h-3 text-brand-gold fill-brand-gold" /> Includes GST & Approvals Estimate
                                     </p>
                                 </div>
                                 <Link href="/get-a-quote" className="w-full md:w-auto">
-                                    <Button className="w-full bg-brand-gold hover:bg-slate-950 text-white font-black h-16 px-8 rounded-2xl shadow-xl transition-all flex items-center gap-3">
+                                    <Button className="w-full bg-brand-gold hover:bg-slate-950 text-white font-black h-14 px-8 text-sm rounded-2xl shadow-xl transition-all flex items-center gap-3">
                                         Get Detailed Quote <ChevronRight className="w-6 h-6 ml-2" />
                                     </Button>
                                 </Link>

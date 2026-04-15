@@ -33,12 +33,12 @@ export function WhyChooseUsSection() {
             <div className="container mx-auto px-4 md:px-8">
                 <div className="flex flex-col lg:flex-row gap-12 items-end justify-between mb-20">
                     <div className="lg:w-3/5">
-                        <h2 className="text-4xl md:text-6xl font-extrabold text-brand-blue leading-[1.15] mb-8 tracking-tight">
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-brand-blue leading-[1.15] mb-6 tracking-tight">
                             Trust Isn't Given. It's Built Through <span className="text-brand-gold">Meticulous Execution</span>.
                         </h2>
                     </div>
                     <div className="lg:w-2/5">
-                        <p className="text-xl text-slate-700 font-medium md:border-l-4 md:border-brand-gold md:pl-8 leading-relaxed mb-4">
+                        <p className="text-base text-slate-700 font-medium md:border-l-4 md:border-brand-gold md:pl-8 leading-relaxed mb-4">
                             Building a home in Bangalore is traditionally stressful. We’ve professionalized the process by treating your project like high-stakes corporate infrastructure.
                         </p>
                     </div>
@@ -57,8 +57,8 @@ export function WhyChooseUsSection() {
                             <div className="w-16 h-16 bg-white text-brand-gold rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
                                 {feat.icon}
                             </div>
-                            <h3 className="text-2xl font-bold text-brand-blue mb-4 tracking-tight">{feat.title}</h3>
-                            <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                            <h3 className="text-xl font-bold text-brand-blue mb-3 tracking-tight">{feat.title}</h3>
+                            <p className="text-base text-slate-600 leading-relaxed font-medium">
                                 {feat.desc}
                             </p>
                         </motion.div>

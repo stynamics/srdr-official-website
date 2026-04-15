@@ -24,7 +24,7 @@ export function Footer() {
                 />
               </div>
             </Link>
-            <p className="text-slate-400 leading-relaxed text-lg font-medium max-w-sm">
+            <p className="text-slate-400 leading-relaxed text-base font-medium max-w-sm">
                 Bangalore's premier engineering partner. We combine **Vastu science** with corporate project discipline to build legendary homes.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-brand-gold font-bold text-xs uppercase tracking-[0.2em]">
@@ -37,8 +37,8 @@ export function Footer() {
           {/* Service Areas */}
           <div className="lg:col-span-3 flex flex-col gap-8">
             <div>
-              <h4 className="text-sm font-black text-brand-gold mb-6 uppercase tracking-[0.3em]">Primary Hubs</h4>
-              <ul className="flex flex-col gap-4 text-slate-300 text-base font-bold">
+              <h4 className="text-xs font-black text-brand-gold mb-5 uppercase tracking-[0.25em]">Primary Hubs</h4>
+              <ul className="flex flex-col gap-4 text-slate-300 text-sm font-bold">
                 <li><Link href="/locations/whitefield" className="hover:text-brand-gold transition-colors">Whitefield (IT Corridor)</Link></li>
                 <li><Link href="/locations/k-r-puram" className="hover:text-brand-gold transition-colors">K R Puram (East-Zone)</Link></li>
                 <li><Link href="/locations/electronic-city" className="hover:text-brand-gold transition-colors">Electronic City</Link></li>
@@ -49,8 +49,8 @@ export function Footer() {
 
           <div className="lg:col-span-2 flex flex-col gap-10">
             <div>
-              <h4 className="text-sm font-black text-brand-gold mb-6 uppercase tracking-[0.3em]">Quick Links</h4>
-              <ul className="flex flex-col gap-4 text-slate-400 text-base font-bold">
+              <h4 className="text-xs font-black text-brand-gold mb-5 uppercase tracking-[0.25em]">Quick Links</h4>
+              <ul className="flex flex-col gap-4 text-slate-400 text-sm font-bold">
                 <li><Link href="/about" className="hover:text-white transition-colors">Our Legacy</Link></li>
                 <li><Link href="/services/residential-construction" className="hover:text-white transition-colors">Construction</Link></li>
                 <li><Link href="/portfolio" className="hover:text-white transition-colors">Masterpieces</Link></li>
@@ -61,15 +61,15 @@ export function Footer() {
 
           {/* Contact Details */}
           <div className="lg:col-span-3 flex flex-col gap-8">
-            <h4 className="text-sm font-black text-brand-gold mb-2 uppercase tracking-[0.3em]">H.Q. Bangalore</h4>
-            <ul className="flex flex-col gap-6 text-slate-300 text-base font-bold">
+            <h4 className="text-xs font-black text-brand-gold mb-3 uppercase tracking-[0.25em]">H.Q. Bangalore</h4>
+            <ul className="flex flex-col gap-5 text-slate-300 text-sm font-bold">
               <li className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-brand-gold shrink-0 mt-1" />
                 <span className="leading-relaxed">12, SRT Square, 2nd Floor,<br />Whitefield Main Road, Bangalore 560066</span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="w-5 h-5 text-brand-gold shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-brand-gold transition-colors font-black text-xl">+91 98765 43210</a>
+                <a href="tel:+919876543210" className="hover:text-brand-gold transition-colors font-black text-base">+91 98765 43210</a>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="w-5 h-5 text-brand-gold shrink-0" />
@@ -83,8 +83,8 @@ export function Footer() {
         <div className="bg-white/5 backdrop-blur-xl rounded-[2.5rem] p-10 mb-20 flex flex-col lg:flex-row items-center justify-between gap-10 border border-white/10 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 blur-[80px] rounded-full pointer-events-none" />
             <div className="text-center lg:text-left relative z-10">
-                <h4 className="text-3xl font-black text-white mb-3">Begin Your Legacy.</h4>
-                <p className="text-slate-400 text-xl font-medium">Book a site visit with our chief engineers today.</p>
+                <h4 className="text-2xl font-black text-white mb-2">Begin Your Legacy.</h4>
+                <p className="text-slate-400 text-base font-medium">Book a site visit with our chief engineers today.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-5 w-full lg:w-auto relative z-10">
                 <Link href="/get-a-quote">
@@ -105,9 +105,9 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-12 border-t border-white/5 text-slate-500 text-sm font-bold">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-white/5 text-slate-500 text-xs font-bold">
           <p className="tracking-wide">© {new Date().getFullYear()} SR DreamSpace Realty. Proudly Building Bangalore.</p>
-          <div className="flex gap-10 mt-8 md:mt-0 uppercase tracking-[0.2em] text-[10px]">
+          <div className="flex gap-8 mt-6 md:mt-0 uppercase tracking-[0.15em] text-[10px]">
             <Link href="/privacy" className="hover:text-brand-gold transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-brand-gold transition-colors">Terms of Work</Link>
             <Link href="/sitemap" className="hover:text-brand-gold transition-colors">Digital Sitemap</Link>

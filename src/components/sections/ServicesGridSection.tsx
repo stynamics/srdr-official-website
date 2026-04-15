@@ -51,10 +51,10 @@ export function ServicesGridSection() {
 
             <div className="container relative z-10 mx-auto px-4 md:px-8">
                 <div className="text-center max-w-4xl mx-auto mb-20">
-                    <h2 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight leading-tight">
+                    <h2 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
                         Built for Performance. <br className="hidden md:block" /> Designed for <span className="text-brand-gold">Longevity</span>.
                     </h2>
-                    <p className="text-slate-300 text-xl md:text-2xl leading-relaxed font-medium">
+                    <p className="text-slate-300 text-base md:text-lg leading-relaxed font-medium">
                         Comprehensive construction expertise across Bangalore, delivered with the precision of high-end engineering.
                     </p>
                 </div>
@@ -73,13 +73,13 @@ export function ServicesGridSection() {
                             <div className="w-16 h-16 bg-brand-gold/15 text-brand-gold rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-brand-gold group-hover:text-brand-blue transition-all duration-300">
                                 <svc.icon size={32} />
                             </div>
-                            <h3 className="text-2xl md:text-3xl font-extrabold mb-5 tracking-tight">{svc.title}</h3>
-                            <p className="text-slate-300/90 mb-10 flex-grow text-lg md:text-xl leading-relaxed font-medium">
+                            <h3 className="text-xl md:text-2xl font-extrabold mb-4 tracking-tight">{svc.title}</h3>
+                            <p className="text-slate-300/90 mb-8 flex-grow text-base md:text-lg leading-relaxed font-medium">
                                 {svc.desc}
                             </p>
                             
-                            <Link href={svc.path} className="inline-flex items-center text-brand-gold font-bold group-hover:text-white transition-colors mt-auto text-xl uppercase tracking-widest">
-                                View Details <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
+                            <Link href={svc.path} className="inline-flex items-center text-brand-gold font-bold group-hover:text-white transition-colors mt-auto text-sm uppercase tracking-wide">
+                                View Details <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                             </Link>
                         </motion.div>
                     ))}

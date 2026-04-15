@@ -26,7 +26,7 @@ export default function PortfolioGalleryPageClient() {
                     <motion.h1 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-10 leading-[1.1] tracking-tight"
+                        className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 leading-[1.1] tracking-tight"
                     >
                         Our Engineering <span className="text-brand-gold">Masterpieces</span>
                     </motion.h1>
@@ -34,7 +34,7 @@ export default function PortfolioGalleryPageClient() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-xl md:text-3xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed font-medium"
+                        className="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed font-medium"
                     >
                         Success isn't accidental. Explore our portfolio of successfully delivered residential villas, commercial hubs, and high-end restorations across Bangalore.
                     </motion.p>
@@ -45,7 +45,7 @@ export default function PortfolioGalleryPageClient() {
                         className="flex flex-col sm:flex-row justify-center gap-6"
                     >
                         <Link href="/get-a-quote">
-                            <Button className="w-full sm:w-auto bg-brand-gold hover:bg-brand-gold/90 text-white font-bold h-18 px-12 text-xl rounded-full shadow-2xl transition-transform hover:scale-105">
+                            <Button className="w-full sm:w-auto bg-brand-gold hover:bg-brand-gold/90 text-white font-bold h-14 px-10 text-base rounded-full shadow-2xl transition-transform hover:scale-105">
                                 Start Your Journey
                             </Button>
                         </Link>
@@ -123,18 +123,18 @@ export default function PortfolioGalleryPageClient() {
                                             
                                             <div className="absolute bottom-10 left-10 right-10 flex justify-between items-end z-20">
                                                 <div className="max-w-[80%]">
-                                                    <h3 className="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tight leading-tight group-hover:text-brand-gold transition-colors">{project.title}</h3>
-                                                    <div className="flex items-center text-slate-300 text-lg font-bold">
-                                                        <MapPin className="w-6 h-6 mr-2 text-brand-gold" /> {project.location}
+                                                    <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-3 tracking-tight leading-tight group-hover:text-brand-gold transition-colors">{project.title}</h3>
+                                                    <div className="flex items-center text-slate-300 text-base font-bold">
+                                                        <MapPin className="w-5 h-5 mr-2 text-brand-gold" /> {project.location}
                                                     </div>
                                                 </div>
-                                                <div className="w-16 h-16 bg-white text-brand-blue rounded-full flex items-center justify-center scale-90 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 shadow-2xl">
-                                                    <ArrowRight className="w-8 h-8" />
+                                                <div className="w-14 h-14 bg-white text-brand-blue rounded-full flex items-center justify-center scale-90 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 shadow-2xl">
+                                                    <ArrowRight className="w-6 h-6" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="p-10 md:p-14">
-                                            <p className="text-slate-700 leading-relaxed text-xl font-medium line-clamp-3">
+                                        <div className="p-8 md:p-12">
+                                            <p className="text-slate-700 leading-relaxed text-base font-medium line-clamp-3">
                                                 {project.shortDesc}
                                             </p>
                                             <div className="mt-8 flex flex-wrap gap-3">
@@ -144,9 +144,9 @@ export default function PortfolioGalleryPageClient() {
                                                     </span>
                                                 ))}
                                             </div>
-                                            <div className="mt-10 pt-10 border-t border-slate-100 flex items-center justify-between">
-                                                <span className="text-brand-blue text-lg font-black uppercase tracking-[0.2em]">View Case Study</span>
-                                                <ArrowRight className="w-6 h-6 text-brand-gold group-hover:translate-x-3 transition-transform duration-300" />
+                                            <div className="mt-8 pt-8 border-t border-slate-100 flex items-center justify-between">
+                                                <span className="text-brand-blue text-sm font-black uppercase tracking-[0.2em]">View Case Study</span>
+                                                <ArrowRight className="w-5 h-5 text-brand-gold group-hover:translate-x-3 transition-transform duration-300" />
                                             </div>
                                         </div>
                                     </Link>

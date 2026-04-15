@@ -15,7 +15,7 @@ export default function AboutPageClient() {
                     <motion.h1 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-8 leading-[1.1] tracking-tight"
+                        className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight"
                     >
                         Building <span className="text-brand-gold">Certainty</span>,<br/>Not Just Structures.
                     </motion.h1>
@@ -23,7 +23,7 @@ export default function AboutPageClient() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-xl md:text-3xl text-slate-300 leading-relaxed font-medium"
+                        className="text-lg md:text-xl text-slate-300 leading-relaxed font-medium"
                     >
                         Professionalizing civil construction across Bangalore with corporate discipline and iron-clad transparency.
                     </motion.p>
@@ -56,24 +56,24 @@ export default function AboutPageClient() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                         >
-                            <h2 className="text-4xl md:text-6xl font-extrabold text-brand-blue mb-8 tracking-tight leading-tight">Our Mission: Rescuing the Dream.</h2>
-                            <p className="text-xl text-slate-700 mb-8 leading-relaxed font-medium">
+                            <h2 className="text-3xl md:text-5xl font-extrabold text-brand-blue mb-6 tracking-tight leading-tight">Our Mission: Rescuing the Dream.</h2>
+                            <p className="text-base text-slate-700 mb-6 leading-relaxed font-medium">
                                 SR DreamSpace Realty was born out of profound frustration. We saw too many Bangalore families lose their life savings to disorganized contractors, shifting timelines, and budgets that ballooned without warning.
                             </p>
-                            <p className="text-xl text-slate-700 mb-10 leading-relaxed font-medium">
+                            <p className="text-base text-slate-700 mb-8 leading-relaxed font-medium">
                                 We realized the industry didn't just need another builder—it needed high-stakes engineering rigor. We brought corporate discipline to the site, enforcing fixed price contracts and daily reporting so building your home stays a joyful experience.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
                                     <Target className="w-10 h-10 text-brand-gold mb-4" />
-                                    <h4 className="font-extrabold text-brand-blue text-2xl mb-3">Our Core Goal</h4>
-                                    <p className="text-slate-600 text-lg leading-relaxed font-medium">To completely eradicate the anxiety of building a home through 100% transparent management.</p>
+                                    <h4 className="font-extrabold text-brand-blue text-xl mb-2">Our Core Goal</h4>
+                                    <p className="text-slate-600 text-sm leading-relaxed font-medium">To completely eradicate the anxiety of building a home through 100% transparent management.</p>
                                 </div>
                                 <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100">
                                     <Building2 className="w-10 h-10 text-brand-gold mb-4" />
-                                    <h4 className="font-extrabold text-brand-blue text-2xl mb-3">Our Vision</h4>
-                                    <p className="text-slate-600 text-lg leading-relaxed font-medium">To be Bangalore's most implicitly trusted civil construction and luxury real estate developer.</p>
+                                    <h4 className="font-extrabold text-brand-blue text-xl mb-2">Our Vision</h4>
+                                    <p className="text-slate-600 text-sm leading-relaxed font-medium">To be Bangalore's most implicitly trusted civil construction and luxury real estate developer.</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -86,8 +86,8 @@ export default function AboutPageClient() {
                 <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-tr from-brand-gold/10 via-transparent to-transparent pointer-events-none" />
                 <div className="container relative z-10 mx-auto px-4 md:px-8">
                     <div className="text-center max-w-4xl mx-auto mb-24">
-                        <h2 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight">The SR Mandate</h2>
-                        <p className="text-xl md:text-2xl text-slate-300 font-medium leading-relaxed">These are the strict, non-negotiable standards that define every square foot we build.</p>
+                        <h2 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight">The SR Mandate</h2>
+                        <p className="text-base md:text-lg text-slate-300 font-medium leading-relaxed">These are the strict, non-negotiable standards that define every square foot we build.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -107,8 +107,8 @@ export default function AboutPageClient() {
                                 <div className="w-20 h-20 bg-brand-gold/20 text-brand-gold rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
                                     <val.icon size={40} />
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-extrabold mb-6 tracking-tight">{val.title}</h3>
-                                <p className="text-lg md:text-xl text-slate-400 leading-relaxed font-medium">{val.desc}</p>
+                                <h3 className="text-xl md:text-2xl font-extrabold mb-4 tracking-tight">{val.title}</h3>
+                                <p className="text-sm md:text-base text-slate-400 leading-relaxed font-medium">{val.desc}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -120,16 +120,16 @@ export default function AboutPageClient() {
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="flex flex-wrap justify-center gap-16 md:gap-32">
                         <div className="text-center">
-                            <h4 className="text-5xl md:text-8xl font-black mb-2">10+</h4>
-                            <p className="font-black uppercase tracking-[0.2em] text-xs md:text-sm text-brand-blue/70">Years Experience</p>
+                            <h4 className="text-4xl md:text-7xl font-black mb-2">10+</h4>
+                            <p className="font-black uppercase tracking-[0.2em] text-xs text-brand-blue/70">Years Experience</p>
                         </div>
                         <div className="text-center">
-                            <h4 className="text-5xl md:text-8xl font-black mb-2">100+</h4>
-                            <p className="font-black uppercase tracking-[0.2em] text-xs md:text-sm text-brand-blue/70">Families Served</p>
+                            <h4 className="text-4xl md:text-7xl font-black mb-2">100+</h4>
+                            <p className="font-black uppercase tracking-[0.2em] text-xs text-brand-blue/70">Families Served</p>
                         </div>
                         <div className="text-center">
-                            <h4 className="text-5xl md:text-8xl font-black mb-2">100%</h4>
-                            <p className="font-black uppercase tracking-[0.2em] text-xs md:text-sm text-brand-blue/70">Price Certainty</p>
+                            <h4 className="text-4xl md:text-7xl font-black mb-2">100%</h4>
+                            <p className="font-black uppercase tracking-[0.2em] text-xs text-brand-blue/70">Price Certainty</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ export default function AboutPageClient() {
                         </div>
                         <div className="lg:w-3/5 p-12 md:p-20 flex flex-col justify-center">
                             <h3 className="text-3xl font-extrabold text-brand-blue mb-10 tracking-tight uppercase tracking-widest text-sm text-brand-gold">A Personal commitment</h3>
-                            <p className="text-2xl md:text-3xl text-slate-800 italic mb-12 leading-relaxed font-medium">
+                            <p className="text-xl md:text-2xl text-slate-800 italic mb-10 leading-relaxed font-medium">
                                 "When you build your home with us, you aren't just signing a contract—you are handing over your family's future. I personally guarantee that our engineers will treat your project with the exact same gravity and care as if we were constructing our own homes."
                             </p>
                             <div className="flex items-center gap-6">
@@ -164,9 +164,9 @@ export default function AboutPageClient() {
             {/* Final CTA */}
             <section className="py-24 md:py-32 text-center">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-4xl md:text-7xl font-extrabold text-brand-blue mb-10 tracking-tight leading-tight">Ready to build without the <span className="text-brand-gold">stress</span>?</h2>
+                    <h2 className="text-3xl md:text-6xl font-extrabold text-brand-blue mb-8 tracking-tight leading-tight">Ready to build without the <span className="text-brand-gold">stress</span>?</h2>
                     <Link href="/get-a-quote">
-                        <Button className="bg-brand-gold hover:bg-brand-gold/90 text-white font-bold h-20 px-16 text-xl rounded-full shadow-2xl transition-all hover:scale-105">
+                        <Button className="bg-brand-gold hover:bg-brand-gold/90 text-white font-bold h-16 px-14 text-base rounded-full shadow-2xl transition-all hover:scale-105">
                             Start Your Project Properly <ArrowRight className="ml-4 w-6 h-6" />
                         </Button>
                     </Link>
