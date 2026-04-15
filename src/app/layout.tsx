@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { JsonLd } from "@/components/seo/JsonLd";
 
@@ -52,8 +51,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // TODO: Replace G-XXXXXXXXXX with your real GA4 Measurement ID from analytics.google.com
-  const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+  // TODO: Add GA4 after deploying to Hostinger with actual domain name
+  // Import `Script` from "next/script" and uncomment the GA4 block below
+  // const GA_MEASUREMENT_ID = "G-YOUR_REAL_ID";
 
   return (
     <html lang="en" className="scroll-smooth">
@@ -64,19 +64,19 @@ export default function RootLayout({
         className={`${jakartaSans.variable} ${playfair.variable} antialiased font-sans flex flex-col min-h-screen bg-slate-50`}
       >
         {children}
-        {/* Google Analytics 4 — swap G-XXXXXXXXXX with real ID to activate */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', { page_path: window.location.pathname });
-          `}
-        </Script>
+        {/* 
+          Google Analytics 4 — Uncomment after Hostinger deployment with real domain:
+          
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}', { page_path: window.location.pathname });
+            `}
+          </Script>
+        */}
       </body>
     </html>
   );

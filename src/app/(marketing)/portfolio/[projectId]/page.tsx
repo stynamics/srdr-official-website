@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { portfolioDatabase } from "@/lib/data/portfolio";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { ArrowLeft, MapPin, Calendar, Clock, CheckCircle2, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -89,15 +90,21 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="relative group">
                                         <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider z-10 border border-white/10">Before</div>
-                                        <img src={project.beforeImage} alt={`Before ${project.title}`} className="w-full h-80 object-cover rounded-2xl shadow-md border border-slate-100" />
+                                        <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-md border border-slate-100">
+                                            <Image src={project.beforeImage} alt={`Before ${project.title}`} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                                        </div>
                                     </div>
                                     <div className="relative group">
                                         <div className="absolute top-4 left-4 bg-brand-gold text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider z-10 shadow-lg">Final Result</div>
-                                        <img src={project.afterImage} alt={`After ${project.title}`} className="w-full h-80 object-cover rounded-2xl shadow-xl border border-brand-gold/20" />
+                                        <div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-xl border border-brand-gold/20">
+                                            <Image src={project.afterImage} alt={`After ${project.title}`} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                                        </div>
                                     </div>
                                 </div>
                             ) : (
-                                <img src={project.afterImage} alt={project.title} className="w-full h-[60vh] object-cover rounded-3xl shadow-xl border border-slate-100" />
+                                <div className="relative w-full h-[60vh] rounded-3xl overflow-hidden shadow-xl border border-slate-100">
+                                    <Image src={project.afterImage} alt={project.title} fill className="object-cover" sizes="100vw" />
+                                </div>
                             )}
                         </div>
 
