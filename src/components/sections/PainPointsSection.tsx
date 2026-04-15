@@ -30,7 +30,7 @@ export function PainPointsSection() {
                         Construction in Bangalore shouldn't be a nightmare.
                     </h2>
                     <p className="text-base md:text-lg text-slate-700 leading-relaxed font-medium">
-                        You've likely heard the horror stories: contractors vanishing, BBMP approval headaches, and substandard materials. At SR DreamSpace, we’ve built our entire business model to solve these exact frustrations.
+                        You've likely heard the horror stories: contractors vanishing, BBMP approval headaches, and substandard materials. At SR DreamSpace Realty, we’ve built our entire business model to solve these exact frustrations.
                     </p>
                 </div>
 

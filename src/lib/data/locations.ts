@@ -8,7 +8,7 @@ export const locationDatabase: Record<string, LocationData> = {
     tagline: "Transparent pricing, flawless execution, and completely stress-free turnkey construction services right here in K R Puram, Bangalore.",
     insight: {
       headline: "Building in K R Puram Done Right.",
-      text: "K R Puram and its surrounding micro-markets like Ramamurthy Nagar, TC Palya, and Battarahalli are seeing massive residential growth. However, residents often face issues with disorganized local contractors who delay projects and enforce hidden costs. SR DreamSpace brings corporate-level structured construction to East Bangalore.",
+      text: "K R Puram and its surrounding micro-markets like Ramamurthy Nagar, TC Palya, and Battarahalli are seeing massive residential growth. However, residents often face issues with disorganized local contractors who delay projects and enforce hidden costs. SR DreamSpace Realty brings corporate-level structured construction to East Bangalore.",
       bulletPoints: [
         "Specialized in deep foundation handling for varying soil types in K R Puram.",
         "Complete ownership of local BBMP and BWSSB plan approvals.",
@@ -57,7 +57,7 @@ export const locationDatabase: Record<string, LocationData> = {
       ]
     },
     faqs: [
-      { q: "I live abroad. Can SR DreamSpace build my home in Electronic City?", a: "Yes. Our digital mapping and Whatsapp-driven daily project management system allows NRIs to oversee their construction securely without needing to be physically present." },
+      { q: "I live abroad. Can SR DreamSpace Realty build my home in Electronic City?", a: "Yes. Our digital mapping and Whatsapp-driven daily project management system allows NRIs to oversee their construction securely without needing to be physically present." },
       { q: "Do you construct multi-story PGs or rental buildings?", a: "Yes, we build highly durable, low-maintenance residential complexes optimized for tenant leasing and high rental yields." },
       { q: "What is your timeline for a standard project?", a: "We commit to an aggressive but realistic 8-10 month turnaround for standard residential buildings, backed by formal timeline agreements." }
     ]

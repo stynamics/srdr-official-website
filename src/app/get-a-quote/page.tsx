@@ -59,7 +59,7 @@ export default function GetAQuotePage() {
 
     // Build WhatsApp message with all lead data
     const message = [
-      `🏗️ *New Quote Request from SR DreamSpace Website*`,
+      `🏗️ *New Quote Request from SR DreamSpace Realty Website*`,
       ``,
       `📋 *Service:* ${data.service}`,
       `📐 *Size:* ${data.size} Sq. Ft.`,
@@ -297,7 +297,7 @@ export default function GetAQuotePage() {
                     {[1,2,3,4,5].map(s => <span key={s} className="text-brand-gold text-xl">★</span>)}
                 </div>
                 <p className="text-slate-300 text-base italic mb-6 leading-relaxed">
-                    "SR DreamSpace made building our home completely stress-free. The final cost perfectly matched the initial quote."
+                    "SR DreamSpace Realty made building our home completely stress-free. The final cost perfectly matched the initial quote."
                 </p>
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-brand-gold/20 rounded-full flex items-center justify-center font-bold text-brand-gold">R</div>

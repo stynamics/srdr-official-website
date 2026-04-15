@@ -11,7 +11,7 @@ export const serviceDatabase: Record<string, ServiceData> = {
       { title: "Substandard Materials", desc: "Using cheap local cement or steel to maximize contractor margins silently." }
     ],
     solution: {
-      title: "The SR DreamSpace Promise",
+      title: "The SR DreamSpace Realty Promise",
       desc: "Our residential team operates on a strict 100% Fixed Price Model. The price you sign is the price you pay to the penny. We utilize dedicated project managers assigning you daily photo updates, ensuring zero guesswork."
     },
     processSteps: [
@@ -106,7 +106,7 @@ export const serviceDatabase: Record<string, ServiceData> = {
     ],
     solution: {
       title: "One Contract. Zero Headaches.",
-      desc: "Turnkey means total accountability. SR DreamSpace acts as your sole point of contact. Our unified team of architects, civil engineers, and master interior designers operate in perfect sync to deliver a fully complete home."
+      desc: "Turnkey means total accountability. SR DreamSpace Realty acts as your sole point of contact. Our unified team of architects, civil engineers, and master interior designers operate in perfect sync to deliver a fully complete home."
     },
     processSteps: [
       { step: "01", title: "Master Blueprint", desc: "Integrating both civil architecture and interior blueprints into one master plan." },

@@ -25,7 +25,7 @@ export default function ContactPageClient() {
 
         // Build WhatsApp message with all lead data
         const message = [
-            `🏗️ *New Lead from SR DreamSpace Website*`,
+            `🏗️ *New Lead from SR DreamSpace Realty Website*`,
             ``,
             `👤 *Name:* ${name}`,
             `📞 *Phone:* ${phone}`,

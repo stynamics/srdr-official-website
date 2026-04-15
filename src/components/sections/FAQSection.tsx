@@ -8,7 +8,7 @@ import Link from "next/link";
 const faqs = [
     {
         q: "What is your pricing model and is there a fixed-price guarantee?",
-        a: "Yes, absolutely. Every project at SR DreamSpace begins with a detailed cost breakdown agreed upon before a single brick is laid. We operate on a fixed-price contract — the quote you sign is the price you pay, even if material costs fluctuate during construction. There are no hidden extras, no surprise bills, and no mid-project renegotiation.",
+        a: "Yes, absolutely. Every project at SR DreamSpace Realty begins with a detailed cost breakdown agreed upon before a single brick is laid. We operate on a fixed-price contract — the quote you sign is the price you pay, even if material costs fluctuate during construction. There are no hidden extras, no surprise bills, and no mid-project renegotiation.",
     },
     {
         q: "How long does it take to build a typical residential house in Bangalore?",

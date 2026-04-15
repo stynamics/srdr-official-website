@@ -10,7 +10,7 @@ const testimonials = [
         location: "Whitefield, Bangalore",
         project: "3BHK Villa",
         rating: 5,
-        text: "SR DreamSpace completely transformed our building experience. The final cost matched the initial quote to the last rupee, and they delivered our villa 2 weeks ahead of schedule. The daily WhatsApp updates gave us complete peace of mind.",
+        text: "SR DreamSpace Realty completely transformed our building experience. The final cost matched the initial quote to the last rupee, and they delivered our villa 2 weeks ahead of schedule. The daily WhatsApp updates gave us complete peace of mind.",
         initials: "RK",
     },
     {
@@ -18,7 +18,7 @@ const testimonials = [
         location: "HSR Layout, Bangalore",
         project: "4BHK Duplex Villa",
         rating: 5,
-        text: "After two failed experiences with local contractors, SR DreamSpace was a breath of fresh air. Their project manager was always reachable, the material quality was exceptional, and every Vastu specification we requested was honoured perfectly.",
+        text: "After two failed experiences with local contractors, SR DreamSpace Realty was a breath of fresh air. Their project manager was always reachable, the material quality was exceptional, and every Vastu specification we requested was honoured perfectly.",
         initials: "PS",
     },
     {
@@ -26,7 +26,7 @@ const testimonials = [
         location: "Electronic City, Bangalore",
         project: "Commercial Office Space",
         rating: 5,
-        text: "We needed our 4,000 sq ft office ready in exactly 6 months for our business launch. SR DreamSpace not only delivered on time but the fit-out quality exceeded our expectations. The fixed-price contract saved us from budget anxiety.",
+        text: "We needed our 4,000 sq ft office ready in exactly 6 months for our business launch. SR DreamSpace Realty not only delivered on time but the fit-out quality exceeded our expectations. The fixed-price contract saved us from budget anxiety.",
         initials: "MI",
     },
     {
@@ -34,7 +34,7 @@ const testimonials = [
         location: "K R Puram, Bangalore",
         project: "Complete Home Renovation",
         rating: 5,
-        text: "Our 20-year-old home needed a complete overhaul. The SR DreamSpace team handled everything — from structural reinforcement to modern interiors — without us having to chase a single person. Truly professional construction management.",
+        text: "Our 20-year-old home needed a complete overhaul. The SR DreamSpace Realty team handled everything — from structural reinforcement to modern interiors — without us having to chase a single person. Truly professional construction management.",
         initials: "AR",
     },
     {
@@ -42,7 +42,7 @@ const testimonials = [
         location: "Sarjapur Road, Bangalore",
         project: "2BHK Independent House",
         rating: 5,
-        text: "Building our retirement home was an emotional decision. SR DreamSpace treated it with the gravity it deserved. The Vastu-compliant design, A-grade UltraTech cement, and Jaquar fittings — everything was exactly as promised in the agreement.",
+        text: "Building our retirement home was an emotional decision. SR DreamSpace Realty treated it with the gravity it deserved. The Vastu-compliant design, A-grade UltraTech cement, and Jaquar fittings — everything was exactly as promised in the agreement.",
         initials: "SN",
     },
 ];
