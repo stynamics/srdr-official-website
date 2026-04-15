@@ -105,6 +105,10 @@ export function HeroSection() {
                     <span className="text-sm font-bold tracking-[0.15em] uppercase">Vastu-Compliant • Premium Construction</span>
                 </motion.div>
                 
+                <motion.p variants={itemVariants} className="text-base font-black text-brand-gold tracking-[0.3em] uppercase">
+                    SR DreamSpace Realty
+                </motion.p>
+
                 <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1] tracking-tighter">
                     Bangalore's <br />
                     <span className="text-brand-gold italic underline decoration-brand-gold/20">Heritage</span> Civil <br />

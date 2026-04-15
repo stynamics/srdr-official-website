@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X } from "lucide-react";
+import { X } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 const WHATSAPP_NUMBER = "919591641954";
 const DEFAULT_MESSAGE = "Hi SR DreamSpace Realty! I'm interested in your construction services. Can you help me with a quote?";
@@ -62,7 +63,7 @@ export function FloatingWhatsApp() {
       >
         {/* Pulse ring */}
         <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20" />
-        <MessageCircle className="w-7 h-7 text-white relative z-10" fill="white" />
+        <WhatsAppIcon className="w-8 h-8 text-white relative z-10" />
       </motion.a>
     </div>
   );

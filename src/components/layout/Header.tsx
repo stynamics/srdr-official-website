@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import { Menu, MessageCircle } from "lucide-react";
+import { Menu } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -72,7 +73,7 @@ export function Header() {
               className="text-green-600 hover:text-green-500 transition-colors bg-green-50 p-2 rounded-full"
               aria-label="WhatsApp Us"
             >
-              <MessageCircle size={20} />
+              <WhatsAppIcon className="w-5 h-5" />
             </Link>
             {/* CTA */}
             <Link href="/get-a-quote">
@@ -91,7 +92,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="text-green-600 hover:text-green-500 bg-green-50 p-2 rounded-full"
           >
-            <MessageCircle size={20} />
+            <WhatsAppIcon className="w-5 h-5" />
           </Link>
           <Sheet>
             <SheetTrigger className="bg-slate-50 border border-slate-100 p-2 rounded-md hover:bg-slate-100 transition-colors flex items-center justify-center">
