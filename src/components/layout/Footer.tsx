@@ -11,21 +11,21 @@ export function Footer() {
 
       <div className="container relative z-10 mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16 mb-24">
-          
+
           {/* Brand & Trust */}
           <div className="lg:col-span-4 flex flex-col gap-8">
             <Link href="/" className="flex items-center gap-2">
               <div className="relative w-56 h-14">
-                <Image 
-                    src="/logo.png" 
-                    alt="SR DreamSpace Realty" 
-                    fill
-                    className="object-contain object-left invert brightness-200"
+                <Image
+                  src="/logo.png"
+                  alt="SR DreamSpace Realty"
+                  fill
+                  className="object-contain object-left invert brightness-200"
                 />
               </div>
             </Link>
             <p className="text-slate-400 leading-relaxed text-base font-medium max-w-sm">
-                Bangalore's premier engineering partner. We combine **Vastu science** with corporate project discipline to build legendary homes.
+              Bangalore's premier engineering partner. We combine **Vastu science** with corporate project discipline to build legendary homes.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-brand-gold font-bold text-xs uppercase tracking-[0.2em]">
               <span>ISO 9001 Certified</span>
@@ -65,7 +65,7 @@ export function Footer() {
             <ul className="flex flex-col gap-5 text-slate-300 text-sm font-bold">
               <li className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-brand-gold shrink-0 mt-1" />
-                <span className="leading-relaxed">12, SRT Square, 2nd Floor,<br />Whitefield Main Road, Bangalore 560066</span>
+                <span className="leading-relaxed">#108 GroundFloor Brindavana Layout<br /> K R Puram,T C Palya Bangalore 560036</span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="w-5 h-5 text-brand-gold shrink-0" />
@@ -81,27 +81,27 @@ export function Footer() {
 
         {/* CTA Banner Inline Footer */}
         <div className="bg-white/5 backdrop-blur-xl rounded-[2.5rem] p-10 mb-20 flex flex-col lg:flex-row items-center justify-between gap-10 border border-white/10 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 blur-[80px] rounded-full pointer-events-none" />
-            <div className="text-center lg:text-left relative z-10">
-                <h4 className="text-2xl font-black text-white mb-2">Begin Your Legacy.</h4>
-                <p className="text-slate-400 text-base font-medium">Book a site visit with our chief engineers today.</p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-5 w-full lg:w-auto relative z-10">
-                <Link href="/get-a-quote">
-                    <Button className="w-full sm:w-auto bg-brand-gold hover:bg-white hover:text-brand-blue text-brand-blue font-black px-12 h-16 rounded-2xl shadow-2xl transition-all">
-                        Free Consultation
-                    </Button>
-                </Link>
-                <a 
-                    href="https://wa.me/919591641954" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-3 px-10 h-16 bg-white/5 text-slate-200 hover:bg-white/10 rounded-2xl transition-all font-black border border-white/10"
-                >
-                    <MessageCircle size={24} className="text-green-500" />
-                    WhatsApp
-                </a>
-            </div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 blur-[80px] rounded-full pointer-events-none" />
+          <div className="text-center lg:text-left relative z-10">
+            <h4 className="text-2xl font-black text-white mb-2">Begin Your Legacy.</h4>
+            <p className="text-slate-400 text-base font-medium">Book a site visit with our chief engineers today.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-5 w-full lg:w-auto relative z-10">
+            <Link href="/get-a-quote">
+              <Button className="w-full sm:w-auto bg-brand-gold hover:bg-white hover:text-brand-blue text-brand-blue font-black px-12 h-16 rounded-2xl shadow-2xl transition-all">
+                Free Consultation
+              </Button>
+            </Link>
+            <a
+              href="https://wa.me/919591641954"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 px-10 h-16 bg-white/5 text-slate-200 hover:bg-white/10 rounded-2xl transition-all font-black border border-white/10"
+            >
+              <MessageCircle size={24} className="text-green-500" />
+              WhatsApp
+            </a>
+          </div>
         </div>
 
         {/* Bottom Bar */}
